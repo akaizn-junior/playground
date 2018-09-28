@@ -1,0 +1,35 @@
+{
+  "name": "weatheroo",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "scripts": {
+    "clean:dist": "cd dist && rm app.json || rm Procfile || rm *.css || rm *.map || rm *.js || rm *.html || rm -R node_modules",
+    "copy": "cp package.json dist && cp app.json dist && cp Procfile dist",
+    "dev": "parcel client/index.html",
+    "build": "parcel build src/index.html && npm run copy",
+    "dev:server": "http-server -o -p 8080 dist/",
+    "server": "nodemon server/app.js --exec",
+    "start": "npm run server"
+  },
+  "author": "Simao Nziaka",
+  "private": true,
+  "license": "ISC",
+  "engines": {
+    "node": "10.2.1",
+    "npm": "6.4.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "node-fetch": "^2.2.0",
+    "nodemon": "^1.18.4",
+    "parcel": "^1.9.7",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "node-sass": "^4.9.3"
+  }
+}

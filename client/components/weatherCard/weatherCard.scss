@@ -1,0 +1,84 @@
+.card {
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  background: #f5f5f5;
+  min-width: 200px;
+  min-height: 150px;
+  color: #b09b74;
+  font-weight: 300;
+  margin: 5px;
+
+  // TITLE BAR
+
+  .title {
+    padding-left: 5px;
+    font-size: 14px;
+
+    .brand {
+      color: #594b4b;
+      padding: 5px 0px;
+      transition: color 2s;
+      cursor: pointer;
+    }
+
+    .brand:hover {
+      color: #b09b74;
+    }
+
+    p {
+      color: black;
+    }
+  }
+
+  // CONTENT BOX
+
+  .content {
+    padding: 2px 2px 0;
+    text-align: center;
+
+    p {
+      line-height: 5px;
+    }
+  }
+
+  .city,
+  .summary {
+    font-size: 30px;
+  }
+
+  .time {
+    span {
+      font-size: 14px;
+      color: black;
+    }
+  }
+
+  .wind,
+  .temperature,
+  .humidity,
+  .visibility {
+    font-weight: 300;
+    font-size: 25px;
+     span {
+       font-size: 14px;
+       color: black;
+     }
+  }
+
+  // FOOTER
+
+  .footer {
+    .reload-btn {
+      background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAQAAADADIVqAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAJiS0dEAACqjSMyAAABvElEQVQ4y6XUTUiUURQG4GdmNAsyi6jsR1BqMUHUoh/ob5NFQ4tauGnXvlXLonLnVqKgVUHbFm2TQDchGdWiRRSYJWZCo2Q6JNqIc1v0Id98zTdjdO7mnnvP+/KewzmH/7RM6k9Ouw5tKuZMmlb5F9oWZz00quSXJXPeu++UZnDUebn68E4PlITE+a5fu4IJ72yvB897vgpa9E3RUuSteG1S8MmedPgOz6LwCf0K8va74K6vMS2fdaSXtC8KeupgrMAZh71dJRhPJzhkShAM2p34OWN8LQp6BcGM04n3Y8ZiKYzF6ZtiYeudBINeJggOaFWM7jkf/axNsNVeMGI5QfDYsOyqVzJfm6BNKyqm/0ptwWha1tnYfdkKMo36rNriCmYV7ZSxLzW6x3EVrzwRaqt5JAiGbakJ3xX1wr10PZeVBWVXa9L3qggWXUwn2OaFIJhyKTHoOVfMCoIhm+vVpMe8ICi6rTMqZ06XPj+imSxUA5ILpckNN7WgYtwbX2R0OKJLFotuudNotWxwPRKbPDOuabEGyzlnwEIVeMGA7lodkrYTNzqhW94mlHwwZCQ+AY0J/tg6zVhWTg/5DSBHsrgJwKgoAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTAzLTI5VDE3OjE1OjQzKzA2OjAw9Yul7gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wMy0yOVQxNzoxNTo0MyswNjowMITWHVIAAAAvdEVYdHN2Zzpjb21tZW50AD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/5MH3awAAAABJRU5ErkJggg==');
+      background-repeat: no-repeat;
+      padding: 5px;
+      width: 25px;
+      cursor: pointer;
+      transition: transform .8s;
+    }
+
+    .reload-btn:hover {
+      transform: rotateZ(45deg)
+    }
+  }
+}
